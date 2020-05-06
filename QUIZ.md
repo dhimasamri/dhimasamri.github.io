@@ -5,4 +5,4 @@
 3. Membuat gambar user pada form login berada diantara latar halaman dan block yang menjorok keluar. Hal ini sulit diimplementasikan mengingat block yang menjorok keluar tersebut 
 
 ## .: 1 Impossible to achieve element :. ##
-Menempatkan logo pada banner (slider) di halaman awal. Logo yang saya tempatkan saat ini menyatu dengan gambar slider, yang saya inginkan adalah logo tersebut terpisah berada di atas gambar slider. Hal ini sulit diimplementasikan karenat terdapat tulisan pada slider tersebut. Setiap kali saya ingin implementasikan tidak pernah bekerja seperti yang saya harapkan
+Menempatkan logo pada banner (slider) di halaman awal. Logo yang saya tempatkan saat ini menyatu dengan gambar slider, yang saya inginkan adalah logo tersebut terpisah berada di atas gambar slider. Hal ini sulit diimplementasikan karenat terdapat tulisan pada slider tersebut. Setiap kali saya ingin implementasikan tidak pernah bekerja seperti yang saya harapkan. Lalu saya menggunakanan banner yang image logo dan bannernya sudah menyatu
