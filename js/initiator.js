@@ -183,6 +183,5 @@
           sessionStorage.setItem("GImage", Image);
           sessionStorage.setItem("GEmail", Email);
           window.location.href="sign-up.html";
-
-
+          gapi.auth2.getAuthInstance().signOut();
         }
