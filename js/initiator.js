@@ -158,7 +158,7 @@
               sessionStorage.setItem("NIK", NIKData);
               sessionStorage.setItem("Profession", ProfessionData);
               sessionStorage.setItem("Skillset", skillsetData);
-              sessionStorage.setItem("Password", passwordData);
+              sessionStorage.setItem("PasswordData", passwordData);
               sessionStorage.setItem("Fullname", fullnameData);
               sessionStorage.setItem("Birthdate", birthdateData);
               sessionStorage.setItem("Telephone", telephoneData);
@@ -184,4 +184,21 @@
           sessionStorage.setItem("GEmail", Email);
           window.location.href="sign-up.html";
           gapi.auth2.getAuthInstance().signOut();
+        }
+
+        // untuk login
+        function loginButton() {
+          var nameU = document.getElementById("usernameLogin").value;
+          var passU = document.getElementById("passwordLogin").value;
+          var nameI = sessionStorage.getItem("Username");
+          var passI = sessionStorage.getItem("PasswordData");
+          if (nameU == nameI) {
+            if (passU != "") {
+              window.location.href="pages/user_page/home.html"
+            }
+          }
+
+          else {
+            window.alert("Try again!");
+          }
         }

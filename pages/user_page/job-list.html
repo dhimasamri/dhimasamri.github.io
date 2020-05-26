@@ -22,15 +22,12 @@
         <nav class="grey darken-2">
           <div class="container">
             <div class="nav-wrapper">
-              <a href="index.html" class="brand-logo">Black Regalia</a>
+              <a href="home.html" class="brand-logo">Black Regalia</a>
               <a href="#" data-target="mobile-nav" class="sidenav-trigger"><i class="material-icons">menu</i></a>
               <ul class="right hide-on-med-and-down">
-                <li><a href="index.html">Home</a></li>
-                <li><a href="">Forum</a></li>
-                <li><a href="">Job List</a></li>
-                <li><a href="">FAQ</a></li>
-                <li><a href="login.html" class="waves-effect waves-light btn">Login</a></li>
-                <li><a href="bef-signup.html" class="waves-effect waves-light btn">Sign Up</a></li>
+                <li><a href="home.html">About</a></li>
+                <li><a href="job-list.html">Job List</a></li>
+                <li><a class="waves-effect waves-light btn" id="btnatas"><i class="material-icons left">account_circle</i></a></li>
               </ul>
             </div>
           </div>
@@ -40,11 +37,9 @@
 
       <!-- SIdeNav -->
       <ul class="sidenav" id="mobile-nav">
-        <li><a href="">Home</a></li>
-        <li><a href="">Join</a></li>
-        <li><a href="">Forum</a></li>
-        <li><a href="">Job List</a></li>
-        <li><a href="">FAQ</a></li>
+        <li><a class="waves-effect waves-light btn" id="btnatas2"><i class="material-icons left">account_circle</i></a></li>
+        <li><a href="home.html">Home</a></li>
+        <li><a href="job-list.html">Job List</a></li>
       </ul>
 
 
@@ -58,10 +53,14 @@
 		    		<div class="col m2 s12 card-panel grey center white-text">
 		    		<div class="section"></div>
 		    			<i class="medium material-icons">account_circle</i>
-		    			<h5>Amrii</h5>
-		    			<p>
-		    				username profile information
-		    			</p>
+		    			<h5 id="HeadName">Amrii</h5>
+		    			<h6 class="left-align" id="Iusername">Username : </h6>
+		    			<h6 class="left-align" id="Iemail">email : </h6>
+		    			<h6 class="left-align" id="INIK">NIK : </h6>
+		    			<h6 class="left-align" id="Iprofession">Profession : </h6>
+		    			<h6 class="left-align" id="Iskillset">Skillset : </h6>
+		    			<h6 class="left-align" id="Ifullname">Full Name : </h6>
+		    			<h6 class="left-align" id="Iaddress">Address : </h6>
 		    		</div>
 
 
@@ -195,6 +194,12 @@
 					    <!-- Isi tab platium -->
 					    <div id="test2" class="col m9 s12">
 					    	<div class="row">
+					    		<div class="col m6 offset-m3 s8 offset-s2">
+					    			<div class="input-field search-wrapper">
+					    				<i class="material-icons prefix">search</i>
+						    			<input type="text" id="jobFilterInput" onkeyup=jobFilter() placeholder="Filter job" title="Type in a name">
+						    		</div>
+					    		</div>
 
 									<div class="col m4 s12">
 						    		<div class="card small">
@@ -313,9 +318,9 @@
             <div class="col l6 s12">
               <h5 class="white-text">Contact Us.</h5>
               <p class="grey-text text-lighten-4">
-                <img src="img/footer/mail.png"> BlackRegalia@web.co.id <br>
-                <img src="img/footer/internet.png"> www.black-regalia.co.id <br>
-                <img src="img/footer/location.png"> Jl.Pahlawan, Citeureup, Bogor, Jawa Barat
+                <img src="../../img/footer/mail.png"> BlackRegalia@web.co.id <br>
+                <img src="../../img/footer/internet.png"> www.black-regalia.co.id <br>
+                <img src="../../img/footer/location.png"> Jl.Pahlawan, Citeureup, Bogor, Jawa Barat
               </p>
             </div>
             <div class="col l4 offset-l2 s12">
@@ -343,5 +348,17 @@
       <!--JavaScript at end of body for optimized loading-->
       <script type="text/javascript" src="../../js/materialize.min.js"></script>
       <script type="text/javascript" src="../../js/initiator.js"></script>
+      <script>
+      		document.getElementById("HeadName").innerHTML = sessionStorage.getItem("Username");
+      		document.getElementById("Iusername").innerHTML += sessionStorage.getItem("Username");
+      		document.getElementById("Iemail").innerHTML += sessionStorage.getItem("Email");
+      		document.getElementById("INIK").innerHTML += sessionStorage.getItem("NIK");
+      		document.getElementById("Iprofession").innerHTML += sessionStorage.getItem("Profession");
+      		document.getElementById("Iskillset").innerHTML += sessionStorage.getItem("Skillset");
+      		document.getElementById("Ifullname").innerHTML += sessionStorage.getItem("Fullname");
+      		document.getElementById("Iaddress").innerHTML += sessionStorage.getItem("Address");
+      		document.getElementById("btnatas").innerHTML += sessionStorage.getItem("Username");
+        	document.getElementById("btnatas2").innerHTML += sessionStorage.getItem("Username");
+      </script>
     </body>
   </html>
