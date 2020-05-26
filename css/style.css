@@ -59,3 +59,8 @@
 	max-width:	100px;
 	vertical-align: middle;
 }
+
+/* Guild Structure */
+.GuildStructure .card-image .material-icons {
+	vertical-align: middle;
+}
