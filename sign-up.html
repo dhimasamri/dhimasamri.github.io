@@ -298,9 +298,8 @@
           utilsScript: "build/js/utils.js",
         });
 
-        document.getElementById("fullname").innerHTML = sessionStorage.getItem("GName");
-        document.getElementById("email").innerHTML = sessionStorage.getItem("GEmail");
-        document.getElementById("fullname").innerHTML = sessionStorage.getItem("GName");
+        document.getElementById("fullname").value = sessionStorage.getItem("GName");
+        document.getElementById("email").value = sessionStorage.getItem("GEmail");;
 
       </script>
     </body>
