@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+  <html>
+    <head>
+      <!--Import Google Icon Font-->
+      <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+      <!--Import materialize.css-->
+      <link type="text/css" rel="stylesheet" href="../../css/materialize.min.css"  media="screen,projection"/>
+
+      <!-- MyCSS -->
+      <link rel="stylesheet" href="../../css/style.css"
+
+      <!--Let browser know website is optimized for mobile-->
+      <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+      <title>Member List</title>
+    </head>
+
+    <body>
+
+      <!-- NavBar -->
+      <div class="navbar-fixed">
+        <nav class="grey darken-2">
+          <div class="container">
+            <div class="nav-wrapper">
+              <a href="../../index.html" class="brand-logo">Black Regalia</a>
+              <a href="#" data-target="mobile-nav" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+              <ul class="right hide-on-med-and-down">
+                <li><a href="admin_home.html">About</a></li>
+                <li><a href="admin_memberlist.html">Member List</a></li>
+                <li><a class="waves-effect waves-light btn" id="btnatas"><i class="material-icons left">account_circle</i>Admin</a></li>
+              </ul>
+            </div>
+          </div>
+        </nav>
+      </div>
+
+
+      <!-- SIdeNav -->
+      <ul class="sidenav" id="mobile-nav">
+        <li><a class="waves-effect waves-light btn" id="btnatas2"><i class="material-icons left">account_circle</i></a>Admin</li>
+        <li><a href="home.html">Home</a></li>
+        <li><a href="admin_memberlist.html">Member List</a></li>
+      </ul>
+
+
+      <!-- ISIAN -->
+      <!-- Tabs -->
+      <section id='JobList' class='joblist'>
+      	<div class='section'></div>
+      		<div class='row'>
+
+      		<!-- User info -->
+		    		<div class="col m2 s12 card-panel grey center white-text">
+		    		<div class="section"></div>
+		    			<i class="medium material-icons">account_circle</i>
+		    			<h5 id="HeadName">Administrator</h5>
+		    			<h6 class="left-align" id="Iusername">Username : dhimasamri</h6>
+		    			<h6 class="left-align" id="Iemail">email : dhimasamri@gmail.com</h6>
+		    			<h6 class="left-align" id="INIK">NIK : 311211999999</h6>
+		    			<h6 class="left-align" id="Iprofession">Profession : Admin</h6>
+		    			<h6 class="left-align" id="Iskillset">Skillset : Cehat</h6>
+		    			<h6 class="left-align" id="Ifullname">Full Name : Dhimas Amri Pratama</h6>
+		    			<h6 class="left-align" id="Iaddress">Address : di rumah</h6>
+		    		</div>
+
+
+		    		<div class="section">
+				    <div class="col m10 s12">
+				      <ul class="tabs">
+				        <li class="tab col s3"><a href="#test1">Diamond</a></li>
+				        <li class="tab col s3"><a href="#test2">Platinum</a></li>
+				        <li class="tab col s3"><a href="#test3">Gold</a></li>
+				        <li class="tab col s3"><a href="#test4">Silver</a></li>
+				      </ul>
+				    </div>
+
+			<!-- Isi tab 1 -->
+					    <div id="test1" class="col m9 s12">
+					    	<div class="row">
+					    		<div class="col m6 offset-m3 s8 offset-s2">
+					    			<div class="input-field search-wrapper">
+					    				<i class="material-icons prefix">search</i>
+						    			<input type="text" id="jobFilterInput" onkeyup=jobFilter() placeholder="Filter Name" title="Type in a name">
+						    		</div>
+						    		      <table>
+									        <thead>
+									          <tr>
+									              <th>Name</th>
+									              <th>Full Name</th>
+									              <th>Class</th>
+									          </tr>
+									        </thead>
+
+									        <tbody>
+									          <tr>
+									            <td>Alvin</td>
+									            <td>Alvin and Chipmunk</td>
+									            <td>Platinum</td>
+									          </tr>
+									          <tr>
+									            <td>Alan</td>
+									            <td>Alan Walker</td>
+									            <td>Platinum</td>
+									          </tr>
+									          <tr>
+									            <td>Jonathan</td>
+									            <td>Janet</td>
+									            <td>Platinum</td>
+									          </tr>
+									          <tr>
+									            <td>Valgar</td>
+									            <td>Valgarian</td>
+									            <td>Platinum</td>
+									          </tr>
+									          <tr>
+									            <td>Sheen</td>
+									            <td>Sandy Aditya</td>
+									            <td>Platinum</td>
+									          </tr>
+									        </tbody>
+									      </table>
+					    		</div>
+					    	</div>
+					    </div>
+
+
+					    <!-- Isi tab platium -->
+					    <div id="test2" class="col m9 s12">
+					    	<div class="row">
+					    		<div class="col m6 offset-m3 s8 offset-s2">
+					    			<div class="input-field search-wrapper">
+					    				<i class="material-icons prefix">search</i>
+						    			<input type="text" id="jobFilterInput" onkeyup=jobFilter() placeholder="Filter job" title="Type in a name">
+						    		</div>
+					    		</div>
+
+									<div class="col m4 s12">
+						    		<div class="card small">
+									    <div class="card-image waves-effect waves-block waves-light">
+									      <img class="activator" src="../../img/jobimg/GTQ.png">
+									    </div>
+									    <div class="card-content">
+									      <span class="card-title activator grey-text text-darken-4">Kill Velteria<i class="material-icons right">more_vert</i></span>
+									      <p>Kill Goddess velteria in the divine god tower. Reward 3,000,000 spina
+									      </p>
+									    </div>
+									    <div class="card-reveal">
+									      <span class="card-title grey-text text-darken-4">Kill Almas<i class="material-icons right">close</i></span>
+									      <p>The reward will be 3,000,000 spina</p>
+									      <a href="#">Accept Job</a>
+									    </div>
+									  </div>
+									</div>
+
+					    		<div class="col m4 s12">
+						    		<div class="card small">
+									    <div class="card-image waves-effect waves-block waves-light">
+									      <img class="activator" src="../../img/jobimg/farm.jpg">
+									    </div>
+									    <div class="card-content">
+									      <span class="card-title activator grey-text text-darken-4">Farm Baum<i class="material-icons right">more_vert</i></span>
+									      <p>Collect 100 baum from monster, reward 500,000 spina
+									      </p>
+									    </div>
+									    <div class="card-reveal">
+									      <span class="card-title grey-text text-darken-4">Farm Colon<i class="material-icons right">close</i></span>
+									      <p>Collect 100 drop item named baum from monster. The reward will be 500,000 spina</p>
+									      <a href="#">Accept Job</a>
+									    </div>
+									  </div>
+									</div>
+
+					    		<div class="col m4 s12">
+						    		<div class="card small">
+									    <div class="card-image waves-effect waves-block waves-light">
+									      <img class="activator" src="../../img/jobimg/invguild.png">
+									    </div>
+									    <div class="card-content">
+									      <span class="card-title activator grey-text text-darken-4">Guild Recruit<i class="material-icons right">more_vert</i></span>
+									      <p>Invite a member with lv more than 250. Reward 2,000,000 spina
+									      </p>
+									    </div>
+									    <div class="card-reveal">
+									      <span class="card-title grey-text text-darken-4">Guild Recruit<i class="material-icons right">close</i></span>
+									      <p>Invite a member to Black Regalia with lv more than 250. Reward 2,000,000 spina</p>
+									      <a href="#">Accept Job</a>
+									    </div>
+									  </div>
+									</div>
+
+					    		<div class="col m4 s12">
+						    		<div class="card small">
+									    <div class="card-image waves-effect waves-block waves-light">
+									      <img class="activator" src="../../img/jobimg/MQ.jpg">
+									    </div>
+									    <div class="card-content">
+									      <span class="card-title activator grey-text text-darken-4">Transport Water<i class="material-icons right">more_vert</i></span>
+									      <p>Help merchant transport it's goodies. Reward 1,500,000 spina
+									      </p>
+									    </div>
+									    <div class="card-reveal">
+									      <span class="card-title grey-text text-darken-4">Transport Apples<i class="material-icons right">close</i></span>
+									      <p>Picolo has problem for transporting his goods, she need your help. Go to the destiantion place and you will be rewarded 1,500,000 spina</p>
+									      <a href="#">Accept Job</a>
+									    </div>
+									  </div>
+									</div>
+
+					    		<div class="col m4 s12">
+						    		<div class="card small">
+									    <div class="card-image waves-effect waves-block waves-light">
+									      <img class="activator" src="../../img/jobimg/slayboss.jpg">
+									    </div>
+									    <div class="card-content">
+									      <span class="card-title activator grey-text text-darken-4">Slay Boss<i class="material-icons right">more_vert</i></span>
+									      <p>Kill boss named COWBOY in the palace. Reward 3,000,000 spina
+									      </p>
+									    </div>
+									    <div class="card-reveal">
+									      <span class="card-title grey-text text-darken-4">Slay Boss COBOY<i class="material-icons right">close</i></span>
+									      <p>COWBOY is defending the palace, you need to kill him at all cost. Many have tried but all of them was fail. The reward is 3,000,000 spina</p>
+									      <a href="#">Accept Job</a>
+									    </div>
+									  </div>
+									</div>
+								</div>					    	
+					    </div>
+
+
+
+
+					    <div id="test3" class="col m3 s12">No Entry yet</div>
+					    <div id="test4" class="col m3 s12">No Entry yet</div>
+					  </div>
+      		</div>
+      	</div>
+      </section>
+        
+
+
+
+
+
+
+
+
+      <!-- Footer -->
+      <footer class="page-footer">
+        <div class="container">
+          <div class="row">
+            <div class="col l6 s12">
+              <h5 class="white-text">Contact Us.</h5>
+              <p class="grey-text text-lighten-4">
+                <img src="../../img/footer/mail.png"> BlackRegalia@web.co.id <br>
+                <img src="../../img/footer/internet.png"> www.black-regalia.co.id <br>
+                <img src="../../img/footer/location.png"> Jl.Pahlawan, Citeureup, Bogor, Jawa Barat
+              </p>
+            </div>
+            <div class="col l4 offset-l2 s12">
+              <h5 class="white-text">Other games</h5>
+              <ul>
+                <li><a class="grey-text text-lighten-3" href="http://iruna-online.com">Iruna Online</a></li>
+                <li><a class="grey-text text-lighten-3" href="http://id.toram.jp/">Toram Online</a></li>
+                <li><a class="grey-text text-lighten-3" href="#!">Fantasy Online</a></li>
+                <li><a class="grey-text text-lighten-3" href="#!">PUBG</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="footer-copyright">
+          <div class="container">
+          ©2020 Black Regalia Team.
+          <a class="grey-text text-lighten-4 right" href="QUIZ.md">link QUIZ 6-5-2020</a>
+          </div>
+        </div>
+      </footer>
+
+
+
+
+      <!--JavaScript at end of body for optimized loading-->
+      <script type="text/javascript" src="../../js/materialize.min.js"></script>
+      <script type="text/javascript" src="../../js/initiator.js"></script>
+    </body>
+  </html>
