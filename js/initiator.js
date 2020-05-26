@@ -194,7 +194,7 @@
           var passI = sessionStorage.getItem("PasswordData");
           if (nameU == nameI) {
             if (passU != "") {
-              window.location.href="pages/user_page/home.html"
+              window.location.href="pages/user_page/job-list.html"
             }
           }
 
