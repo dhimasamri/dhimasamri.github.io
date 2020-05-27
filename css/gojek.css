@@ -1,0 +1,24 @@
+/* Banner */
+.slider{
+	opacity:100%;
+}
+
+.row {
+}
+p {
+  margin: 0 !important;
+}
+
+.row img {
+	width: 400px;
+}
+
+/* Footer */
+.page-footer {
+	background-color: #757575 !important ;
+}
+
+.page-footer .container img{
+	max-width: 200px;
+	vertical-align: left;
+}
